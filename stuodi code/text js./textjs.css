@@ -1,0 +1,22 @@
+body{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    border: 2px solid black;
+    cursor: pointer;
+;
+}
+#id{
+
+
+}
+.control{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+#draw{
+    cursor: pointer;
+    border-left: 2px solid black ;
+
+}

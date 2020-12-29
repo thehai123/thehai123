@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container" style="width: 100%; height: 100%;">
+        <div id="left"></div>
+        <div id="right">
+            <h1>Sign Up</h1>
+            <input style="border-radius: 0.4rem;" id="email" type="email" placeholder="email">
+            <input style="border-radius: 0.4rem;" id="name" type="name" placeholder="name">
+            <input style="border-radius: 0.4rem;" id="password" type="password" placeholder="password">
+            <button class="formbutton" onclick="signup()">Sign Up</button>
+            <div style="display: flex;">
+            <p> Already have an account?</p><a href="./login.html"> Sign In</a>
+        </div>
+            <p id="check" style="display: none;">Sign Up false, please try again</p>
+        </div>
+    </div>
+    <script>
+        function signup(){
+            let input_email = document.getElementById("email").value;
+            let input_password = document.getElementById("password").value;
+            let input_name = document.getElementById("name").value;
+            let checkblock = document.getElementById("check");
+
+            if (input_email == "" || input_name == "" || input_password == ""){
+                console.log("error");
+                checkblock.style.display = "block";
+                checkblock.style.color = "red";
+            }
+            else {
+                console.log("sign in succesfull");
+                console.log("email", input_email);
+                console.log("name", input_name);
+                console.log("password", input_password);
+                checkblock.style.display = "block";
+                checkblock.style.color = "green";
+                checkblock.innerHTML = "sign up succesfull";
+            }
+        }
+    </script>
+</body>
+</html>

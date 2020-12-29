@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- link dẫn trang -->
+    <!-- style background  -->
+    <div class="img" style="background-color: black; display: flex; justify-content: center; width: 100%; font-size: 2em;align-items: center;position: fixed;"> -->
+        
+        <a href="" style="margin: 0 20px; display: inline-block;">
+            <img style="width: 50px; height: 50px;" 
+            src="https://previews.123rf.com/images/distrologo/distrologo1902/distrologo190200757/117609853-online-shop-logo-design-vector-icon-shopping-logo-design.jpg" alt="">
+        </a>
+        <a  style="color: white; margin: 0 20px; display: inline-block;" href="">Home</a>
+        <a  style="color: white; margin: 0 20px; display: inline-block;" href="">Shop</a>
+        <a  style="color: white; margin: 0 20px; display: inline-block;" href="">About Us</a>
+        <a style="color: white; margin: 0 20px; display: inline-block;" href="">News</a>
+        <a href="" style="margin: 0 20px; display: inline-block; position: absolute; right: 0;">
+        <img width="70px" height="70px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/220px-Heart_coraz%C3%B3n.svg.png" alt="">
+        </a>
+    </div>
+
+    <div>
+     <!-- các thẻ cần dùng để style 
+          background{ 
+        background-color: black;
+        text-align: center;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        font-size: 30px;
+    }     -->
+    </div>
+
+    <div>
+        <!-- display: none (dùng để ẩn thông tin) -->
+        <!--  display: block; (dùng để hiển thị câu) -->
+    </div>   
+
+
+        <!-- chú thích lorem -->
+        <div class="product-p">
+            <div class="footer-item">
+                <p class="text-bold">mindX</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur porro corrupti dolore libero deleniti animi quae tempore consequuntur voluptate quam aut, sint aliquam odio atque aliquid molestiae veritatis quos perferendis!</p>
+            
+            </div>
+            <div class="footer-item">
+                <p class="text-bold">mindX</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur porro corrupti dolore libero deleniti animi quae tempore consequuntur voluptate quam aut, sint aliquam odio atque aliquid molestiae veritatis quos perferendis!</p>
+                
+            </div>
+            <div class="footer-item">
+                <p class="text-bold">mindX</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur porro corrupti dolore libero deleniti animi quae tempore consequuntur voluptate quam aut, sint aliquam odio atque aliquid molestiae veritatis quos perferendis!</p>
+                
+            </div>
+            </div>
+              
+            <!-- cách :)) -->
+
+            <div>
+            <!--  transition-property: background-color;
+                  transition: 0.5s;  dùng để khi click chuotj làm tốc độ mượt mà hơn-->
+            </div>
+
+
+            <div>
+          <!-- (sắp xếp số  theo thứ tự tuqf bế đến lớn ngược lại)-->
+          <script>
+               function swap(a, b , array){
+            let tmp = array[a];
+            array[a] = array[b];
+            array[b] = tmp;
+        }
+
+        let myarray = [3,4,5,1,20,12,5,2,1,16]; 
+          function sort_2(hinght){
+            console.log("hinght 1",hinght)
+            for (let i = 0; i < hinght.length; i++){
+                let k = i;
+                for(let j = i; j < hinght.length; j++){
+                    if(hinght[k] > hinght[j]){
+                        k = j;
+                    }
+                }
+                swap(i, k, hinght);
+            }
+        console.log("hinght",hinght)
+    }
+    sort_2(myarray);</script>
+          </div>
+    
+
+          <!-- Local Storage  -->
+          <div>
+              <h1 id="heading">today i am feel sad</h1>         
+       <script>
+           let age = 16; 
+
+           localStorage.setItem("userage",age);
+
+           localStorage.setItem("coursename","mindx school");
+
+           let userage = localStorage.getItem("userage");
+           console.log(userage);
+           
+           let coursename = localStorage.getItem("coursename");
+           document.getElementById("heading").innerHTML = coursename
+        //    xóa dữ liệu 
+           localStorage.removeItem("userage")
+
+           let islogin = [1,2,3];
+           console.log(islogin);
+           localStorage.setItem("islogin", JSON.stringify( islogin) );
+           let = JSON.parse(localStorage.getItem("islogin") ) ;
+           console.log(islogin[1]);
+           console.log(islogin)
+
+           
+       </script>
+        </div>
+
+</body>
+</html>

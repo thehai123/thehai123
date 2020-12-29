@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=sc, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function swap(a, b , array){
+            let tmp = array[a];
+            array[a] = array[b];
+            array[b] = tmp;
+        }
+
+        let myarray = [3,4,5,1,20,12,5,2,1,16];
+
+        // function sort(myaray){
+        //     console.log("myarry ",myaray)
+        //     for (let i = 0; i < myaray.length; i++) {
+        //         for (let j = i; j < myaray.length; j++){
+        //             if(myaray[i] < myaray[j]){
+        //                 swap(i, j, myaray);
+        //             }
+        //         }
+        //     }
+        //     console.log("myarry ",myaray);
+        // }
+        // sort(myarray);
+
+        function sort_2(hinght){
+            console.log("hinght 1",hinght)
+            for (let i = 0; i < hinght.length; i++){
+                let k = i;
+                for(let j = i; j < hinght.length; j++){
+                    if(hinght[k] > hinght[j]){
+                        k = j;
+                    }
+                }
+                swap(i, k, hinght);
+                // console.log("hinght",hinght);
+            }
+        console.log("hinght",hinght)
+    }
+    sort_2(myarray);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.text-bold{
+    font-weight: bold;
+    /* bcolor: lawngreen;
+     */
+     background-color: lawngreen;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin: 0;
+    background-image: url('https://file.hstatic.net/1000288768/file/gi_y_d__b_ng_ebet_eb206_21_579c0a7ed4184d73a3cc5c5c24159b4b_grande.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.menu{
+    height: 100%;
+   
+}
+

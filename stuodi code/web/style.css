@@ -1,0 +1,120 @@
+html,body {
+    height: 100%;
+    margin: 0;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+}
+.info {
+    width: 80%;
+    height: 70%;
+    padding: 13% 10% 0 10%;
+}
+
+
+
+.bg {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvCLxDVNq_XAt21WrEbOiwe_sda-EOo6YQvA&usqp=CAUhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvCLxDVNq_XAt21WrEbOiwe_sda-EOo6YQvA&usqp=CAU);
+    height: 100%;
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+.btn {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .success {
+    border-color: #4CAF50;
+    color: green;
+  }
+  
+  .success:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0;
+  }
+  .intro {
+      width: 25%;
+      margin: 0;
+      border: 4px solid white;
+      border-radius: 4rem;
+      height: 80%;
+      padding: 10px;
+      color: white;
+      border-radius: 5%;
+      transition-property: background-color,color;
+      transition: 0.5s;
+  }
+  #left{
+      width: 50%;
+      height: 100%;
+      background-image: url(https://innamdinh.vn/upload/images/article/tranhphongthuytet/DLV-93.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: left;
+  }
+  #right{
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  input{
+      height: 5%;
+      width: 40%;
+      margin-top: 20px;
+  }
+  .formbutton{
+    height: 5%;
+    width: 35%;
+    background: #00ad5f;
+    color: whitesmoke;
+    transition-property: background-color;
+    transition: 0.5s;
+    margin-top: 20px;
+  }
+  .formbutton:hover{
+      background-color: black;
+  }
+  a{
+      color: #00ad5f;
+    transition-property: color;
+    transition: 0.5s;
+    text-decoration: none;
+    margin: 16px 5px;
+  }
+  a:hover{
+      color:black
+  }
+  .padding{
+      padding: 50px 10%;
+  }
+  .footer-item{
+    width: 25%;
+}
+.product-p{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-top: 10px;
+    background-color: lemonchiffon;
+    padding: 50px 10%;
+ }
+ #img{
+    
+ }
+

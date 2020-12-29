@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       button{
+           width: 100%;
+           border: solid black 2px;
+       }
+       input{
+           border: solid black 2px;
+       }
+    </style>
+</head>
+<body>
+    <table border="1">
+      <tr>
+          <td colspan="3" > <input id="result" type="text"></td>
+          <td><button onclick="clr()">clear</button></td>
+          
+          
+      </tr>
+      <tr>
+         <td><button onclick="display(1)">1</button></td>
+         <td><button onclick="display(2)">2</button></td>
+         <td><button onclick="display(3)">3</button></td>
+         <td><button onclick="setoperator('/')">/</button></td>
+    </tr>
+      <tr>
+          <td><button onclick="display(4)">4</button></td>
+          <td><button onclick="display(5)">5</button></td>
+          <td><button onclick="display(6)">6</button></td>
+          <td><button onclick="setoperator('-')">-</button></td>
+
+      </tr>
+      <tr>
+          <td><button onclick="display(7)">7</button></td>
+          <td><button onclick="display(8)">8</button></td>
+          <td><button onclick="display(9)">9</button></td>
+          <td><button onclick="setoperator('+')">+</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="display('.')">.</button></td>
+        <td><button onclick="display(0)">0</button></td>
+        <td><button onclick="solve()">=</button></td>
+        <td><button onclick="setoperator('*')">*</button></td>
+      </tr>
+    </table>
+
+     
+    <script>
+        let sothunhat;
+        let sothuhai;
+        let toantu=""; 
+        let display = function(n){
+            let result = document.getElementById("result");
+            if (result.value === "+" || result.value === "-" || result.value === "/" || result.value === "*" ){
+                result.value=""
+            }
+            result.value += n;        
+        }
+        let setoperator = function(n){
+            let result = document.getElementById("result");
+            sothunhat = result.value;
+            result.value = n;
+            toantu = n;
+        }
+        let solve = function(){
+            let result = document.getElementById("result")
+            sothuhai = result.value;
+            let ketqua = 0;
+            sothunhat = parseFloat(sothunhat);
+            sothuhai = parseFloat(sothuhai);
+            if( toantu === "+"){
+                ketqua = sothunhat + sothuhai;
+            }
+            if( toantu === "-"){
+                ketqua = sothunhat - sothuhai;
+            }
+            if( toantu === "*"){
+                ketqua = sothunhat*sothuhai;
+            }
+            if( toantu === "/"){
+                ketqua = sothunhat/sothuhai;
+            }
+            result.value = ketqua
+        }
+
+
+            let clr = function(){
+                 document.getElementById("result").value = ""
+                
+            }
+    </script>
+</body>
+</html>

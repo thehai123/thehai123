@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="nice-body">
+    <script>
+        let body = document.getElementById("nice-body");
+        let h1 = "<h1>đây là thẻ h1 được tự động thêm vào</h1>"
+        // let newh1 = document.createElement("h1")
+        newh1.innerHTML = "đây là thẻ h1 được tạo ra bằng createElement"    
+        body.appendChild(newh1);
+        body.innerHTML += h1;
+            
+        
+     
+    </script>
+    
+</body>
+</html>
